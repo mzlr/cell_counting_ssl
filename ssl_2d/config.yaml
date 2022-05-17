@@ -1,0 +1,45 @@
+DATASET: 'vgg'
+OUTPUT_DIR: ''
+
+GPU_ID: 0
+RNG_SEED: 5455
+LOG_PERIOD: 10
+SELF_ATTN: 1
+
+TRAIN:
+  NUM: 8
+  SEMI_SUP: True
+  EPOCH: -1
+  STEP: 12750
+  BATCH_SIZE: 8
+  BATCH_SIZE_AUG: 80
+  LABEL_DISTANCE: True
+  CROP_RATIO: 1.
+  PEAK: True
+  KERNEL: 'gaussian'
+  MULHEAD: False
+
+  LOSS: 'mse'
+  PRETRAIN: 0
+  SUP_AUG: []
+  SEMI_AUG: ['layer_noise']
+
+  EMA: False
+  RAMP: True
+  RAMP_W: 1.
+  ANNEAL: False
+
+  PATCH_SIZE: 200
+  PATCH_DEPTH: 56
+
+MODEL:
+  NORM: 'instance'
+  DROPOUT: 'both'
+  DROPOUT_RATE: 0.3
+  BN_MOMENTUM: 0.9
+
+SOLVER:
+  OPT: 'adam'
+  BASE_LR: 1e-3
+  WEIGHT_DECAY: 1e-3
+  RESTART_STEP: 50
