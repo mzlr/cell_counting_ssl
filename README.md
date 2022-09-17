@@ -17,12 +17,3 @@ bash run.sh config.yaml
 cd ssl_3d
 bash run.sh config.yaml
 ```
-
-## RENCI Internal Usage
-1. Login ht1.renci.org
-2. Run 
-
-        sinteractive -p gpu
-        module load singularity/3.9.5
-        singularity run --nv -B /projects/ashok/yueguo/ /projects/ashok/yueguo/ngc.sif
-3. Follow the same steps in [Usage](##Usage).
