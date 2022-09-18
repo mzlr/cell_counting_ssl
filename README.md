@@ -17,3 +17,6 @@ bash run.sh config.yaml
 cd ssl_3d
 bash run.sh config.yaml
 ```
+
+# Interactive labeling tool for dot annotations 
+Our tool is based on [Segmentor](https://github.com/RENCI/Segmentor). Please refer to this [wiki](https://github.com/RENCI/Segmentor/wiki/Dot-Annotation) for details.
