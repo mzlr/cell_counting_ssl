@@ -1,5 +1,5 @@
 # Self-supervised learning for cell counting
-This repo contains the source code for 2D & 3D image-based cell counting with self-supervised learning.
+This repo contains the source code for the paper, **Cell counting with inverse distance kernel and self-supervised learning** ([link](https://link.springer.com/chapter/10.1007/978-3-031-16961-8_1)).
 
 ## Prerequisites
 - [Docker](https://docs.docker.com/engine/install/)
