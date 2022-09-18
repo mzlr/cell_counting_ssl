@@ -17,6 +17,23 @@ bash run.sh config.yaml
 cd ssl_3d
 bash run.sh config.yaml
 ```
+## Data
+Pre-processed data used in the paper are also provided for convenience.
+Create the `data` folder in the both the 2D & 3D folder and download the files from [Google Drive](https://drive.google.com/drive/folders/1WUG4VSZ4vktmkTB549Pnpv1pTAm0cFVw?usp=sharing).  The structure is as follows:
+```
+cell_counting_ssl
+  |-ssl_2d
+  |  |-data
+  |  |  |-VGG
+  |  |  |  |-VGG.hdf5
+  ...
+  |-ssl_3d
+  |  |-data
+  |  |  |-STN
+  |  |  |  |-075_fid.hdf5
+  |  |  |  |-unlabeled.hdf5
+  ...
+```
 
 # Interactive labeling tool for dot annotations 
 Our tool is based on [Segmentor](https://github.com/RENCI/Segmentor). Please refer to this [wiki](https://github.com/RENCI/Segmentor/wiki/Dot-Annotation) for details.
